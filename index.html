@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trip Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+  <div class="container">
+    <header class="header_card">
+      <div class="name_log">Trip Manager</div>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboards</a></li>
+          <li><a href="#">Trips</a></li>
+          <li><a href="#">Reports</a></li>
+        </ul>
+        <div class="notifications" aria-label="Notifications"></div>
+        <div class="profile" aria-label="User Profile"></div>
+      </nav>
+    </header>
+
+    <main class="card_form">
+      <h1>Add New Trip</h1>
+      <form id="tripForm">
+        <label>
+          Passenger Name:
+          <input type="text" name="passenger" id="passenger" required />
+        </label>
+
+        <label>
+          Motorist Name:
+          <input type="text" name="motorist" id="motorist" required />
+        </label>
+
+        <label>
+          Pick-up Address:
+          <input type="text" name="origin" id="origin" required />
+        </label>
+
+        <label>
+          Destination Address:
+          <input type="text" name="destination" id="destination" required />
+        </label>
+
+        <label>
+          Trip Fare:
+          <input type="number" name="fare" id="fare" required min="0" step="0.01" />
+        </label>
+
+        <button type="submit">Add Trip</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
