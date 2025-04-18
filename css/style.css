@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e7eaee;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container{
+    width: 1250px;
+    height: 630px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.header_card{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: #D3D3D3 solid 1px;
+}
+
+.header_card > .logo_air{
+    display: flex;
+}
+
+.header_card > .logo_air > .img_logo img{
+    width: 20px;
+    height: 20px;
+}
+
+.header_card > .logo_air > .name_log{
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.header_card > nav{
+    display: flex;
+    gap: 20px;
+}
+
+.header_card > nav > ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header_card > nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.header_card > nav > ul > li > a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+nav > .notifications{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #F5F5F5;
+    border-radius: 12.5px;
+}
+
+nav > .notifications > img{
+    height: 20px;
+    width: 20px;
+}
+
+nav > .profile > img {
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+}
+
+.card_form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card_form > h1{
+    margin-top: 60px;
+    margin-bottom: 3
+    0px;
+}
+
+#tripForm{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#tripForm > input{
+    width: 370px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 0px 10px;
+    border: 1px solid #d3d3d3;
+}
+
+#tripForm > button{
+    width: 410px;
+    height: 40px;
+    background-color: #2b58de;
+    color: #ffff;
+    margin: 30px auto;
+    border: none;
+    border-radius: 15px;
+
+}
