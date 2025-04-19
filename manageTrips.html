@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trip Manager</title>
+  <title>Manage Trips</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -28,33 +28,27 @@
         </nav>
       </header>
 
-      <main class="card_form">
-        <h1>Add New Trip</h1>
-        <form id="tripForm" >
-        
-            <input type="text" name="passenger" id="passenger" placeholder="Driver name" required />
-       
+      <main class="card_form table">
+        <h1>Manage Trips</h1>
+        <table id="table_trips">
+            <thead>
+                <tr>
+                    <th>Driver</th>
+                    <th>Passenger</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                    <th>Trip Fee</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
 
-            <input type="text" name="motorist" id="motorist" placeholder="Passenger name" required />
-      
-
-     
-            <input type="text" name="origin" id="origin" placeholder="Pickup Address" required />
-         
-
-            <input type="text" name="destination" id="destination" placeholder="Destination Address" required />
-     
-
-     
-            <input type="number" name="fare" id="fare" required min="0" step="0.01" placeholder="Trip Fare" />
-
-          <button type="submit">Add Trip</button>
-        </form>
+            <tbody></tbody>
+        </table>
       </main>
     </div>
   </div>
 
-  <script type="module" src="./js/controller/formController.js"></script>
+  <script type="module" src="./js/controller/tableController.js"></script>
 </body>
 
 </html>
