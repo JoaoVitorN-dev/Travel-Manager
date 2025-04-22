@@ -12,7 +12,7 @@ async function loadTable(){
             <td>${element.passenger}</td>
             <td>${element.oringin_address}</td>
             <td>${element.destination_addres}</td>
-            <td>$ ${element.fee}</td>
+            <td>$${element.fee}</td>
             <td><button data-id=${element.id} class="btn_remove">Remove</button></td>
         `
         tbody.appendChild(tr);

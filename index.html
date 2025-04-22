@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trip Manager</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -23,30 +28,21 @@
             <li><a href="./manageTrips.html">Trips</a></li>
             <li><a href="#">Reports</a></li>
           </ul>
-          <div class="notifications" aria-label="Notifications"><img src="./assets/icons_svgs/notification_Icon.svg" alt=""></div>
+          <div class="notifications" aria-label="Notifications"><img src="./assets/icons_svgs/notification_Icon.svg"
+              alt=""></div>
           <div class="profile" aria-label="User Profile"> <img src="./assets/pictures/profile_photo.jpg" alt=""></div>
         </nav>
       </header>
 
       <main class="card_form">
         <h1>Add New Trip</h1>
-        <form id="tripForm" >
-        
-            <input type="text" name="passenger" id="passenger" placeholder="Driver name" required />
-       
+        <form id="tripForm">
 
-            <input type="text" name="motorist" id="motorist" placeholder="Passenger name" required />
-      
-
-     
-            <input type="text" name="origin" id="origin" placeholder="Pickup Address" required />
-         
-
-            <input type="text" name="destination" id="destination" placeholder="Destination Address" required />
-     
-
-     
-            <input type="number" name="fare" id="fare" required min="0" step="0.01" placeholder="Trip Fare" />
+          <input type="text" name="motorist" id="motorist" placeholder="Driver name" required />
+          <input type="text" name="passenger" id="passenger" placeholder="Passenger name" required />
+          <input type="text" name="origin" id="origin" placeholder="Pickup Address" required />
+          <input type="text" name="destination" id="destination" placeholder="Destination Address" required />
+          <input type="number" name="fare" id="fare" required min="1" step="0.5" placeholder="Trip Fare" />
 
           <button type="submit">Add Trip</button>
         </form>

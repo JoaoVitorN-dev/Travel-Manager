@@ -4,8 +4,8 @@ document.querySelector('#tripForm').addEventListener('submit', async  (e) => {
     e.preventDefault();
 
     const data = {
-        passenger : document.querySelector('#passenger').value,
         motorist : document.querySelector('#motorist').value,
+        passenger : document.querySelector('#passenger').value,
         origin : document.querySelector('#origin').value,
         destination : document.querySelector('#destination').value,
         fare : document.querySelector('#fare').value
